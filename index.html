@@ -59,6 +59,79 @@
             </fieldset>
 
         </fieldset>
+
+        <fieldset class="stats-abilities">
+            <legend>Stats & Abilities</legend>
+            <div class="input-container">
+                <div>
+                    <label for="powerLevel">Power Level:</label>
+                    <select name="powerLevel" id="powerLevel">
+                        <option value="gRank">G-Rank</option>
+                        <option value="Option2">Option2</option>
+                        <option value="Option3">Option3</option>
+                        <option value="Option4">Option4</option>
+                    </select>
+                </div>
+
+                <div>
+                <label for="age">Age:</label>
+                <input id="age" type="number" name="age" required>
+                </div>
+
+                <div>
+                <label for="dateOfAwakening">Date of Awakening:</label>
+                <input id="dateOfAwakening" type="date" name="dateOfAwakening" required>
+                </div>
+
+            </div>
+            <fieldset class="abilities-container">
+                <legend>Abilities</legend>
+                <div class="abilities">
+                    <div><input type="checkbox" name="abilities" value="superStrength">Super Strength</div>
+                    <div><input type="checkbox" name="abilities" value="flight">Flight</div>
+                    <div><input type="checkbox" name="abilities" value="telepathy">Telepathy</div>
+                    <div><input type="checkbox" name="abilities" value="energyBlasts">Energy Blasts</div>
+                    <div><input type="checkbox" name="abilities" value="invisibility">Invisibility</div>
+                    <div><input type="checkbox" name="abilities" value="healingFactor">Healing Factor</div>
+                    <div><input type="checkbox" name="abilities" value="timeTravel">Time Travel</div>
+                    <div><input type="checkbox" name="abilities" value="elementalControl">Elemental Control</div>
+                    <div><input type="checkbox" name="abilities" value="value1">Value 1</div>
+                    <div><input type="checkbox" name="abilities" value="value2">Value 2</div>
+                    <div><input type="checkbox" name="abilities" value="value3">Value 3</div>
+                    <div><input type="checkbox" name="abilities" value="value4">Value 4</div>
+                    <div><input type="checkbox" name="abilities" value="value5">Value 5</div>
+                    <div><input type="checkbox" name="abilities" value="value6">Value 6</div>
+                </div>
+            </fieldset>
+
+        </fieldset>
+
+        <fieldset class="other-details">
+            <legend>Other Details</legend>
+            <div class="input-container">
+                <div>
+                    <label for="uploadPortrait">Upload Portrait:</label>
+                    <input type="file" name="uploadPortrait" id="uploadPortrait" required>
+                </div>
+
+                <div>
+                <label for="referenceImgUrl">Reference Image URL:</label>
+                <input id="referenceImgUrl" type="url" name="referenceImgUrl" placeholder="https://example.com/image.png" required>
+                </div>
+
+                <div>
+                <label for="creatorsEmail">Creator's Email:</label>
+                <input id="creatorsEmail" type="email" name="creatorsEmail" required>
+                </div>
+
+                <div class="backstory-nindo">
+                <label for="backstoryNindo">Backstory & Nindo:</label>
+                <textarea id="backstoryNindo" name="backstoryNindo" required>My nindo is...</textarea>
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit">Finalize Character</button>
     </form>
 </body>
 </html>
