@@ -1,0 +1,90 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    color: #444;
+    font-weight: 400;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+
+form input[type="text"], form select {
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #bebebe;
+    padding: 10px;
+    width: 400px;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+    background-color: white;
+}
+
+form input:focus, form input:user-invalid {
+    border: solid 2px rgb(187, 3, 3);
+    background-color: rgba(196, 16, 16, 0.103);
+}
+
+form input:valid, .select-container:valid {
+    border: solid 2px rgb(3, 187, 18);
+    background-color: rgba(16, 196, 46, 0.103);   
+}
+
+form button {
+    background-color: #bb0808;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s ease;
+    font-weight: 700;
+}
+
+form button:hover {
+    background-color: #ce1010;
+    transform: scale(1.01);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: right;
+}
+
+.archertype {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.archertype div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

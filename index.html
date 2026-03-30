@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Character Creator</h2>
+    <form method="post">
+        <fieldset class="core-identity">
+            <legend>Core Identity</legend>
+            <div class="input-container">
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
+
+                <div>
+                <label for="alias">Alias:</label>
+                <input id="alias" type="text" name="alias" required>
+                </div>
+
+                <div>
+                <label for="secretIdentity">Secret Identity:</label>
+                <input id="secretIdentity" type="text" name="secret-identity" placeholder="e.g., Mild-mannered reporter" required>
+                </div>
+
+                <div>
+                <label for="hometown">Hometown:</label>
+                <input id="hometown" type="text" name="hometown" required>
+                </div>
+
+                <div>
+                <label for="worldOrigin">World/Origin:</label>
+                <select id="worldOrigin" required>
+                    <option value="" selected disabled>Kategorie</option>
+                    <option value="napoje" name="category">Nápoje</option>
+                    <option value="koreni" name="category">Koření</option>
+                    <option value="chlazene" name="category">Chlazené</option>
+                    <option value="mrazene" name="category">Mražené</option>
+                </select>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Archertype</legend>
+                <div class="archertype">
+                    <div><input type="radio" name="archertype" value="shonenHero">Shonen Hero</div>
+                    <div><input type="radio" name="archertype" value="rival">Rival</div>
+                    <div><input type="radio" name="archertype" value="sensei">Sensei</div>
+                    <div><input type="radio" name="archertype" value="antiHero">Anti-Hero</div>
+                    <div><input type="radio" name="archertype" value="sidekick">Sidekick</div>
+                </div>
+            </fieldset>
+
+        </fieldset>
+    </form>
+</body>
+</html>
