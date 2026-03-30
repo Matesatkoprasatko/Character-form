@@ -39,7 +39,17 @@ legend {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: end;
+}
+
+.input-container div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.input-container label {
+    width: 120px;
+    text-align: right;
 }
 
 form label {
@@ -51,13 +61,14 @@ form input[type="text"],
 form input[type="number"],
 form input[type="date"],
 form input[type="url"],
-form input[type="email"], form select, form textarea {
+form input[type="email"],
+form select,
+form textarea {
     border-radius: 5px;
     outline: none;
     border: solid 1px #bebebe;
     padding: 10px;
-    width: 100%;
-    max-width: 450px;
+    width: 450px;
     transition: 0.2s ease;
     background-color: white;
 }
